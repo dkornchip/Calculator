@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9; /* Set background color for the body */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  height: 445px;
+  width: 360px;
+  border-radius: 4px;
+  background-color: #444444; /* Modernist grey background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Hide the overflowing content */
+}
+
+.output {
+  height: 80px;
+  background-color: #f9f9f9; /* Off-white background color for the display area */
+}
+
+.keys {
+  gap: 5px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.keys button {
+  border: none;
+  font-size: 28px;
+  min-width: 80px;
+  min-height: 65px;
+  border-radius: 4px;
+  background-color: #f9f9f9; /* Off-white background color for the buttons */
+  color: #333333; /* Dark grey text color for the buttons */
+  transition: background-color 0.3s ease;
+}
+
+.keys button:hover {
+  background-color: #dddddd; /* Dark grey background color on hover */
+  color: #fff; /* White text color on hover */
+}
+
+.keys button:first-child {
+  color: #ffffff;
+  grid-column-end: 3;
+  grid-column-start: 1;
+  background-color: #323232; /* Darker grey background color for the "AC" button */
+}
+
+.keys button:nth-child(15) {
+  color: #ffffff;
+  grid-row: 4 / 6;
+  grid-column: 4 / 4;
+  background-color: #007f00; /* Green background color for the "=" button */
+}
+
+.keys button:nth-child(16) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.input {
+  color: #fff;
+  height: 40px;
+  display: block;
+  font-size: 40px;
+  text-align: right;
+  padding-right: 10px;
+  background-color: #444444; /* Change to desired gray color */
+  font-family: 'Helvetica', Arial, sans-serif; /* Change to desired font */
+}
+
+.result {
+  color: #fff;
+  height: 40px;
+  display: block;
+  font-size: 40px;
+  text-align: right;
+  padding-right: 10px;
+  background-color: #444444; /* Change to desired gray color */
+  font-family: 'Helvetica', Arial, sans-serif; /* Change to desired font */
+}
+
+
+button {
+  font-size: 28px;
+}
+
+.custom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #444444; /* Modernist grey background color */
+}
+
+h1#kek {
+  font-family: 'Arial', sans-serif;
+  font-size: 36px;
+  color: #ffffff; /* White text color */
+  animation: slideIn 1s forwards;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.go-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ff4081;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.go-button:hover {
+  background-color: #ff0059;
+}
